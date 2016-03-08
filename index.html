@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>jQuery Template</title>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         $(function() {
-          $('h1').fadeOut(2000); 
-          
+            $('button').click(function() {
+                var colorUser = $('#colorUser').val();
+                $('#banner').css('background-color', colorUser);
+                $('#banner').val(colorUser);
+                var banner
+                $('#borough').val()
+            });
+            
+
         });
-        
-        
     </script>
-  </head>
-  <body>
-      <h1>hello World </h1>
-  
-  </body>
+    <style>
+        div {
+            height: 500px;
+            width: 750px;
+            
+        }
+        h2{
+            background-color:beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Banner Generator</h1>
+    <h2>What is the Borough that you live in?</h2>
+    <input id=borough></input><br>
+    <h3>What is your team color!?</h3>
+    <input id="colorUser"></input><br>
+    <br>
+    
+    <button>GO!</button>
+    <div id=banner anner></div>
+
+</body>
+
 </html>
