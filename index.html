@@ -8,11 +8,15 @@
     <script>
         $(function() {
             $('button').click(function() {
+                var boroughUser = $('#borough').val();
+                var sportUser= $('#sport').val();
                 var colorUser = $('#colorUser').val();
+                var teamUser = $('#name').val();
                 $('#banner').css('background-color', colorUser);
                 $('#banner').val(colorUser);
-                var banner
-                $('#borough').val()
+
+ var story = ("LET’S GO " + teamUser + "! THE BEST " + sportUser + " TEAM IN " + boroughUser + "!!");
+ $("#banner").html(story);
             });
             
 
@@ -20,13 +24,84 @@
     </script>
     <style>
         div {
-            height: 500px;
+            height: 120px;
             width: 750px;
+            font-size:50px;
+            text-align:center;
+            font-style: italic;
+            margin:auto;
+            border-style: inset;
+               padding: 20px; 
+      
+    border-radius: 25px;
+            
+         
             
         }
-        h2{
-            background-color:beige;
+        h1{
+            text-align:center;
+            font-size:50px;
+              border-style: solid;
+            border-width: 5px;
+    border-color:red;
+    font-style: italic;
+    padding: 20px; 
+      
+    border-radius: 25px;
         }
+            
+        
+        h2{
+            width:330px;
+           font-size: 20px; 
+           text-decoration: underline;
+           
+
+        }
+        h3{
+     font-size: 20px;
+    text-decoration: underline;
+        }
+        h4{
+          text-decoration: underline;  
+            font-size: 20px;
+        }
+        h5{
+           text-decoration: underline;
+            font-size: 20px;  
+        }
+        body{
+            
+            background-image:url("stretching.jpg");
+            background-size:500px;
+            background-repeat: no-repeat;
+             background-position: center;
+             background-color:beige;
+              border-style: solid;
+    border-width: 5px;
+    border-color:blue;
+    border-style: double;
+        }
+        
+        input{
+               border-style: solid;
+    border-width: 2px;
+    border-color:blue red green;
+    color:red;
+    height:1px;
+    font-size:15px;
+    padding: 20px; 
+    border-radius: 25px;
+            
+            
+        }
+    button{
+    width:50px;
+    color:blue;
+    
+    }
+        
+        
     </style>
 </head>
 
@@ -34,8 +109,13 @@
     <h1>Banner Generator</h1>
     <h2>What is the Borough that you live in?</h2>
     <input id=borough></input><br>
-    <h3>What is your team color!?</h3>
+    <h3>Choose your sport!</h3>
+    <input id = sport></input><br>
+    <h4>What is your team color!?</h4>
     <input id="colorUser"></input><br>
+    <h5>What is your team name?</h5>
+    <input id=name></input><br>
+    <br>
     <br>
     
     <button>GO!</button>
