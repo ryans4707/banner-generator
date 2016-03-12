@@ -6,17 +6,18 @@
     <title>jQuery Template</title>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
+    //
         $(function() {
-            $('button').click(function() {
+            $('button').click(function() {//when the button is clicked the information that the user gives is taken 
                 var boroughUser = $('#borough').val();
                 var sportUser= $('#sport').val();
                 var colorUser = $('#colorUser').val();
                 var teamUser = $('#name').val();
-                $('#banner').css('background-color', colorUser);
+                $('#banner').css('background-color', colorUser);//makes the color that the user chooses the background color for the banner 
                 $('#banner').val(colorUser);
 
  var story = ("LET’S GO " + teamUser + "! THE BEST " + sportUser + " TEAM IN " + boroughUser + "!!");
- $("#banner").html(story);
+ $("#banner").html(story);// takes the inputs from the user and puts them into a sentence inside the banner
             });
             
 
@@ -25,17 +26,14 @@
     <style>
         div {
             height: 120px;
-            width: 750px;
+            width: 750px; 
             font-size:50px;
             text-align:center;
             font-style: italic;
             margin:auto;
             border-style: inset;
                padding: 20px; 
-      
     border-radius: 25px;
-            
-         
             
         }
         h1{
